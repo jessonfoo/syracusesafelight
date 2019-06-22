@@ -1,0 +1,569 @@
+.title {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.tooltip {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 70px;
+    top: 0px;
+    z-index: 5;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    min-width: auto;
+    display: none;
+}
+
+.info-block{
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    z-index: 5;
+    position: absolute;
+    bottom: 200px;
+    padding: 20px;
+    width: 350px;
+    pointer-events: none;
+    display: none;
+}
+.info-block span{
+    display: inline-block;
+    width: 38%;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+.sliders {
+    width: 50%;
+    background: rgba(0, 0, 0);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 5;
+    text-align: center;
+}
+
+.sliders input {
+    width: 80%;
+}
+
+.sliders input[type=checkbox]
+{
+  display: inline;
+  width: 13px;
+}
+
+.slider-tabs{
+    display: none;
+    margin: 3px;
+    /*display: inline-block;*/
+    width: 100%;
+}
+
+
+.slider-block{
+    display: none;
+}
+
+.slider-block.active{
+    flex-direction: column;
+    display: flex;
+    display: block;
+    border: none;
+    padding: 3px;
+}
+
+.slider-tab{
+    color: #ffffff;
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+    margin: 3px 6px;
+    cursor: pointer;
+}
+
+.slider-tab.active{
+    color: #ffff00;
+    border: none;
+}
+
+
+.slider-min {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    color: white;
+}
+.slider-max {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    color: white;
+}
+.slider-range {
+    cursor: pointer;
+    width: 100%;
+}
+.slider-title {
+    display: inline-block;
+    width: 30%;
+    vertical-align: baseline;
+    position: relative;
+    top: -10px;
+    color: white;
+    font-size: 14px;
+}
+.slider-container{
+    display: inline-block;
+    width: 68%;
+}
+.slider-total{
+    width: 100%;
+}
+
+.slider-title-main{
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 13px;
+    margin-left: 32px;
+}
+
+#user-slider-value{
+    color: white;
+    width: 100%;
+    display: block;
+}
+
+.luxLevelFilter {
+    width: 190px;
+    background: rgba( 0, 0, 0, 0.5);
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    top: 10px;
+}
+
+.luxLevelFilter button {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    background: rgba( 255, 255, 255, 0.3 );
+    color: white;
+    padding: 7px 3px;
+    border: none;
+    display: block;
+    outline: none;
+}
+.luxLevelFilter button:hover{
+    background: rgba( 255, 255, 255, 0.7);
+    color: black;
+}
+.luxLevelFilter button.allbutton{
+    color: black;
+    background: rgba( 255, 255, 255, 0.7);
+}
+.luxLevelFilter button.lampMode-active{
+    color: rgba( 255, 0, 0, 1);
+}
+.luxLevelFilter button.allbutton:hover{
+    color: white;
+    background: rgba( 0, 0, 0, 0.5 );
+}
+
+.luxLevelFilter span.title {
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+.viewModeButton {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    width: 95px;
+    height: 115px;
+    background: rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 2px solid transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.viewModeButton.mode2D {
+    right: 355px;
+}
+
+.viewModeButton.mode3D {
+    right: 250px;
+}
+
+.viewModeButton:hover, .viewModeButton.currentMode {
+    border-color: white;
+}
+
+.viewModeButton .img {
+    display: block;
+    width: 100%;
+    height: 75px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.viewModeButton.mode2D .img {
+    background-image: url('./assets/2d.png');
+}
+
+.viewModeButton.mode3D .img {
+    background-image: url('./assets/3d.png');
+}
+
+.viewModeButton img {
+    display: block;
+    width: 100%;
+}
+
+.legend{
+    width: 300px;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    bottom: 0;
+    padding: 10px;
+}
+.legend button{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 20px;
+    display: block;
+    outline: none;
+}
+
+
+
+
+.legend1 {
+
+    border-collapse: collapse;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    bottom: 170px;
+
+    font: 12px/20px 'Helvetica Neue', Arial, sans-serif;
+
+    position: absolute;
+
+    right: 10px;
+
+    border-radius: 0px;
+
+    z-index: 1;
+
+}
+
+
+
+.legend1 h4 {
+
+    margin: 0 0 10px;
+
+}
+
+
+
+.legend1 span {
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    height: 10px;
+
+    margin-right: 5px;
+
+    width: 10px;
+
+}
+
+
+
+.legend1 td, .legend1 th, .legend2 td, .legend2 th {
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    padding: 1px 5px;
+
+}
+
+.map-overlay {
+    position: absolute;
+    z-index: 1;
+    float:left;
+    bottom: 0;
+    left: 10px;
+    top: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    overflow: hidden;
+    border-radius: 0px;
+    border: 0px solid rgba(0,0,0,0.4);
+}
+
+.title-features {
+    height: 250px;
+    margin: 0;
+    width: 242px;
+    display: block;
+    padding: 20px;
+    font-size: 0.75em;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.title-features a{
+    text-decoration-color: white;
+}
+
+
+.legend2 {
+
+    border-collapse: collapse;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    bottom: 25px;
+
+    box-shadow: 0 1px 2px rgba(0,0,0,0.10);
+
+    font: 12px/20px 'Helvetica Neue', Arial, sans-serif;
+
+    padding: 10px;
+
+    position: absolute;
+
+    right: 10px;
+
+    border-radius: 0px;
+
+    z-index: 1;
+
+}
+
+
+
+.legend2 span {
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    height: 10px;
+
+    margin-right: 5px;
+
+    width: 10px;
+
+}
+
+
+
+th {
+
+    font-weight: 400;
+
+}
+p {font-weight:400;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.headers{
+    display: inline-block;
+}
+
+.luxLevelText {
+    display: inline-block;
+    width: 60%;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+.lux-value{
+    display: inline-block;
+    width: 20%;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.color {
+    display: inline-block;
+    width: 20%;
+    height: 10px;
+    border-radius: 100px;
+    background: #ffffff;
+}
+
+.unsafe {
+    background: #df469c;
+}
+
+.somewhat {
+    background: #d788b9;
+}
+
+.dont {
+    background: #e9bafb;
+}
+
+.somewhatsafe {
+    background: #b462de;
+}
+
+.very {
+    background: #723bc4;
+}
+
+.darkzone {
+    background: #347cbf;
+}
+
+.properly {
+    background: #4293a5;
+}
+
+.verywell {
+    background: #5bbdb3;
+}
+
+.light {
+    background: #efe260;
+}
+
+.red {
+    display: inline-block;
+    width: 20%;
+    height: 10px;
+    background: #347cbf;
+    border-radius: 100px;
+}
+
+.yellow {
+    display: inline-block;
+    width: 20%;
+    height: 10px;
+    background: #efe260;
+    border-radius: 100px;
+}
+
+.light-blue {
+    display: inline-block;
+    width: 20%;
+    height: 10px;
+    background: #df469c;
+    border-radius: 100px;
+}
+
+.blue {
+    display: inline-block;
+    width: 20%;
+    height: 10px;
+    background: #723bc4;
+    border-radius: 100px;
+}
+
+.crimeLevel {
+    margin-top: 15px !important;
+    font-size: 14px;
+    margin-bottom: 10px !important;
+}
+
+.lampMode {
+    font-size: 14px;
+}
+
+.buildings {
+    margin-top: 15px !important;
+    font-size: 14px;
+    margin-bottom: 10px !important;
+}
+
+.blueLamps {
+    margin-top: 15px !important;
+    font-size: 14px;
+    margin-bottom: 10px !important;
+}
+.button-active{
+    display: block;
+}
+.button-inactive{
+    display: none;
+}
+.active {
+    border: 1px solid #a500c1;
+}
+
+.showSlider{
+    color: white;
+    background: rgba( 0, 0, 0, 0.5 );
+}
+.showSlider:hover{
+    color: white;
+    background: rgba( 0, 0, 0, 0.5 );
+    text-decoration: underline;
+    cursor: pointer;
+}
+.slider-content-to-hide{
+    visibility: hidden;
+}

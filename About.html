@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:hsl(55, 1%, 20%);">
+<style>
+h2 {
+  margin: 10px;
+  font-size: 15px;
+}
+h3 {
+  margin: 10px;
+  font-size: 13px;
+}
+p {
+  font-size: 0.85em;
+  margin: 10px;
+  text-align: left;
+}
+
+.map-overlay {
+  position: absolute;
+  z-index: 1;
+  float:left;
+  bottom: 0;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  margin-left: 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  overflow: auto;
+  border-radius: 0px;
+  border: 0px solid rgba(0,0,0,0.4);
+}
+
+#features {
+  top: 10px;
+  height: 600px;
+  margin-top: 20px;
+  width: 600px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  text-align: left;
+}
+
+</style>
+<nav id="menu"></nav>
+
+<div id='map'></div>
+
+<div class='map-overlay' id='features'>
+<div id='pd'>
+<h2>Project Summary</h2></div>
+<p>The Syracuse University Campus Lighting and Safety Map displays nighttime illumination levels (lux) across campus and compares them with user perceptions of brightness and safety. The goals are to locate zones of excessive or inadequate lighting, to identify opportunities for smart lighting systems, and to provide the campus community with information about exterior lighting performance and locations that are perceived as safe or unsafe. Using light sensor and data logging GPS instruments to measure campus exterior illumination levels, this information is mapped using Geospatial Information System (GIS) tools. A mobile application was developed to collect user geolocation data and ratings of the perceived brightness and safety of campus areas at night. The illuminance levels are qualified based on standard metrics for specifying light levels. The map provides a tool that helps to identify areas for improving safety through smart and sustainable lighting design.<br />
+<br />
+<h3>Syracuse University Project Team:</h3>
+<p>Bess Krietemeyer (Principal Investigator), School of Architecture<br />
+Jason Dedrick (Co-Investigator), School of Information Studies<br />
+Peng Gao (Collaborator), Maxwell School, Department of Geography<br />
+<br />
+<h3>Student Researchers:</h3>
+<p>Camila Andino, School of Architecture<br/>
+Daniela Andino, School of Architecture<br/>
+Karan Sahai, School of Information Studies<br/>
+Paminder Chawla, School of Information Studies<br/>
+Ankit Kothari, School of Information Studies <br/>
+<br/>
+<font color="#f8f8f8">______________________________________________________________________________________</font>
+<p>Funded by the Syracuse University Campus as Lab for Sustainability (CALS) Program
+<br />
+<br />
+<div class='map-overlay' id='legend'></div>
+<body>
+
+</body>
+</html>

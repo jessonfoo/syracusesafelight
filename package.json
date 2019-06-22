@@ -1,0 +1,42 @@
+{
+  "name": "3d-heatmap",
+  "version": "0.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": "10.15.0",
+    "npm": "6.4.1"
+  },
+  "scripts": {
+    "start-local": "webpack-dev-server --env.local --progress --hot --open",
+    "start": "webpack-dev-server --progress",
+    "start2": "webpack-dev-server --progress --hot --open",
+    "build": "webpack",
+    "heroku-postbuild": "npm run build && cp About.html dist/",
+    "serve": "npm run build && node app.js"
+  },
+  "dependencies": {
+    "@deck.gl/experimental-layers": "^6.3.0",
+    "@deck.gl/mapbox": "^6.3.0",
+    "axios": "^0.18.0",
+    "d3-request": "^1.0.6",
+    "d3-scale": "^2.1.2",
+    "deck.gl": "^6.3.0",
+    "express": "^4.16.4",
+    "file-loader": "^2.0.0",
+    "heatmap.js": "^2.0.5",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-map-gl": "^3.3.0",
+    "url-loader": "^1.1.2"
+  },
+  "devDependencies": {
+    "buble": "^0.19.3",
+    "buble-loader": "^0.5.0",
+    "css-loader": "^1.0.1",
+    "html-webpack-plugin": "^3.0.7",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
