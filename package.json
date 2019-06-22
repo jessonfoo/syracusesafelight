@@ -17,7 +17,7 @@
   "dependencies": {
     "@deck.gl/experimental-layers": "^6.3.0",
     "@deck.gl/mapbox": "^6.3.0",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "d3-request": "^1.0.6",
     "d3-scale": "^2.1.2",
     "deck.gl": "^6.3.0",
