@@ -11,11 +11,13 @@ import blue from '../assets/blue.geojson';
 import buildings_geo from '../assets/buildings.geojson';
 import gltf from '../scene.gltf';
 import jsonHexagon from '../a';
+import './ShaderMaterialExtend.js';
+
 import styles from '../styles.css';
 import axios from 'axios';
 import h337 from '../node_modules/heatmap.js/build/heatmap';
 import dismap from '../dismap.jpg';
-
+import "../node_modules/three/src/Three.js";
 import GridPlane from './grid.plane';
 import ThreeRenderer from './three.renderer';
 import diverging from "d3-scale/src/diverging";
@@ -203,7 +205,6 @@ var fromLL = function ( lng, lat) {
 };
 
 
-const THREE = window.THREE;
 
 const building_op_visible = 0.6;
 const building_op_hidden = 0;

@@ -1,6 +1,4 @@
-const THREE = window.THREE;
-
-
+import "../node_modules/three/src/Three.js";
 var fromLL = function ( lng, lat) {
     // derived from https://gist.github.com/springmeyer/871897
     var extent = 20037508.34;

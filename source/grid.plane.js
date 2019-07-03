@@ -1,6 +1,4 @@
-const THREE = window.THREE;
-
-
+import "../node_modules/three/src/Three.js";
 const getMatrixProjectionByCoords = function( coord, matrix ){
 
     let translate = fromLL(coord.lng, coord.lat);
